@@ -1,5 +1,3 @@
-
-
 # Table of Contents
 
 - #### [Screenshots](#screenshots)
@@ -16,11 +14,11 @@
 
 --------------------------
 #### Light Mode
-![Screenshot from 2024-03-23 21-09-07](https://github.com/omlahore/pomodoro-timer-extension/assets/119071446/1fd6e051-7414-444c-90d2-f9aafce8987b)
+![Screenshot from 2024-03-23 21-09-07](https://github.com/omlahore/pomodoro-timer-extension/blob/main/assets/119071446/1fd6e051-7414-444c-90d2-f9aafce8987b.png)
 
 
 #### Dark Mode
-![Screenshot from 2024-03-23 21-15-58](https://github.com/omlahore/pomodoro-timer-extension/assets/119071446/5a49fea6-b4ba-4e5e-b90f-8d1a741957a5)
+![Screenshot from 2024-03-23 21-15-58](https://github.com/omlahore/pomodoro-timer-extension/blob/main/assets/119071446/5a49fea6-b4ba-4e5e-b90f-8d1a741957a5.png)
 
 
 ------------------------------------------------------------------------
@@ -42,7 +40,7 @@
 
 To install the Pomodoro Timer Chrome Extension, follow these steps:
 
-1. **Open Google Chrome**: Launch Google Chrome or any chormium based browser on your computer.
+1. **Open Google Chrome**: Launch Google Chrome or any chromium-based browser on your computer.
 
 2. **Navigate to Extensions**: In the address bar, type or copy-paste `chrome://extensions/` and press Enter. This will take you to the Chrome Extensions management page.
 
@@ -70,4 +68,3 @@ The Pomodoro Timer Chrome Extension is developed using the following technologie
 # License
 
 MIT © [Om Lahore](https://github.com/omlahore)
-
