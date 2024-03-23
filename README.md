@@ -1,13 +1,3 @@
-# Table of Contents
-
-- #### [Screenshots](#screenshots)
-- #### [Features](#features)
-- #### [Installation](#installation)
-- #### [Development](#development)
-- #### [License](#license)
-
-
-------------------------------------------------------------------------
 ------------------------------------------------------------------------
 ## Screenshots
 
