@@ -1,0 +1,255 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --color-primary: #fce6d0; /* Ivory */
+    --color-secondary: #cd6679ca; /* Pearl */
+    --color-font: #17200e; /* Sage */
+    --color-shadow: #6e545a; /* Charcoal */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Open sans', sans-serif;
+    background-image: url('assets/bg.jpg'); /* Add initial background image */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    position: relative; /* Ensure z-index works properly */
+    transition: background-image 0.5s ease; /* Smooth transition for background image */
+}
+
+.container, .controls, h1, .circle {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 2;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    z-index: 1;
+    transition: background-image 0.5s ease;
+}
+
+.dark-mode {
+    background-image: url('assets/bg-night.jpeg');
+}
+
+p, i, h1 {
+    color: var(--color-font);
+}
+
+i {
+    font-size: 3.2rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: min(42.5rem, 100%);
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.painel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 20rem;
+    margin: 5rem auto; /* Center horizontally */
+    padding: 1rem;
+    border-radius: 10rem;
+    box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+}
+
+.painel p {
+    opacity: .8;
+    transition: 1s ease-in;
+}
+
+.painel p.active {
+    opacity: 1;
+    color: var(--color-secondary);
+}
+
+.timer, .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem; /* Adjusted width */
+    height: 20rem; /* Adjusted height */
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.time p {
+    font-size: 5.6rem;
+}
+
+.time p:nth-of-type(2) {
+    position: relative;
+    top: -.5rem;
+    margin-inline: 1rem;
+}
+
+.controls {
+    margin-top: 3rem;
+}
+
+.controls button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls #reset {
+    display: none;
+    background-color: transparent;
+}
+
+#moon_icon {
+    width:30px;
+}
+
+.dark-mode {
+    --color-primary:#3e4b4a;
+    --color-secondary: #7b9080;
+    --color-font: hsl(0, 0%, 100%);
+    --color-shadow: hsl(201, 21%, 27%);
+    background-color: var(--color-primary);
+    color: var(--color-font);
+}
+
+#dark-mode-toggle {
+    position: relative;
+    top: -40px;
+    z-index: 1;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: darken(var(--color-secondary), 10%);
+}
+
+#dark-mode-toggle img {
+    width: 40px;
+}
+
+.button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.button.active {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+#workButton {
+    left: 0px;
+}
+
+#breakButton {
+    right: 0px;
+}
+
+#audioPlayerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+  
+#audioPlayerWrapper audio {
+    display: none;
+}
+  
+#audioPlayerWrapper button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--color-font);
+}
+  
+#audioPlayerWrapper button:hover {
+    color: var(--color-secondary);
+}
+
+.popup-container {
+    width: 400px;
+    max-height: 600px; /* Added max-height */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    overflow-y: auto;
+}
+/* Add styles for the play and reset buttons */
+.controls button img {
+    width: 24px;
+    height: 24px;
+}
