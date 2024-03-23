@@ -20,7 +20,8 @@
 
 
 #### Dark Mode
-![[Screenshot from 2024-03-23 21-15-58 1.png]]
+![Screenshot from 2024-03-23 21-15-58](https://github.com/omlahore/pomodoro-timer-extension/assets/119071446/5a49fea6-b4ba-4e5e-b90f-8d1a741957a5)
+
 
 ------------------------------------------------------------------------
 
