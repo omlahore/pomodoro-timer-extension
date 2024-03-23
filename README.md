@@ -40,7 +40,7 @@ To install the Pomodoro Timer Chrome Extension, follow these steps:
 
 4. **Load Unpacked Extension**: After enabling Developer mode, you'll see additional options appear on the page. Click on the "Load unpacked" button.
 
-5. **Select Extension Folder**: A file explorer window will open. Navigate to the location where you have saved the unzipped folder containing your Pomodoro Timer Chrome Extension. Select the folder and click "Open."
+5. **Select Extension Folder**: A file explorer window will open. Navigate to the location where you have saved the folder containing your Pomodoro Timer Chrome Extension repository. Select the folder and click "Open."
 
 6. **Confirm Installation**: Google Chrome will now load the extension from the selected folder. Once the process is complete, you should see the Pomodoro Timer Chrome Extension listed among your installed extensions.
 
