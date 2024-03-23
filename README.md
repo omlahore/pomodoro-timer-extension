@@ -69,5 +69,5 @@ The Pomodoro Timer Chrome Extension is developed using the following technologie
 ------------------------------------------------------------------------
 # License
 
-[MIT](LICENSE) © [Om Lahore](https://github.com/omlahore)
+MIT © [Om Lahore](https://github.com/omlahore)
 
